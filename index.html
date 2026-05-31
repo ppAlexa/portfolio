@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pallavi Priya | Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="imgforport.jpeg" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                    },
+                    colors: {
+                        studio: {
+                            bg: '#fcfbfc',      
+                            text: '#1e2022',     
+                            card: '#f4f3f0',    
+                            border: '#e8e6e1',  
+                            accent: '#7c6e63'    
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-studio-bg font-sans text-studio-text antialiased selection:bg-studio-accent selection:text-white">
+
+    <header class="sticky top-0 z-50 border-b border-studio-border bg-studio-bg/90 backdrop-blur-md">
+        <div class="mx-auto flex max-w-5xl items-center justify-between px-6 py-5">
+            <a href="#" class="text-base font-bold uppercase tracking-widest text-studio-text">P&middot;P</a>
+            
+            <nav class="hidden md:flex items-center space-x-10 text-[13px] font-semibold uppercase tracking-wider text-slate-500">
+                <a href="#about" class="hover:text-studio-accent transition-colors">01 / About</a>
+                <a href="#projects" class="hover:text-studio-accent transition-colors">02 / Projects</a>
+                <a href="#achievements" class="hover:text-studio-accent transition-colors">03 / Milestones</a>
+                <a href="#extracurriculars" class="hover:text-studio-accent transition-colors">04 / Notes</a>
+                <a href="#contact" class="hover:text-studio-accent transition-colors text-studio-text">Get In Touch &rarr;</a>
+            </nav>
+
+            <button id="menu-btn" class="block md:hidden text-studio-text focus:outline-none">
+                <i class="fa-solid fa-bars-staggered text-xl"></i>
+            </button>
+        </div>
+
+        <nav id="mobile-menu" class="hidden border-t border-studio-border bg-studio-bg px-6 py-6 space-y-4 flex flex-col md:hidden text-[13px] font-semibold uppercase tracking-wider text-slate-600">
+            <a href="#about" class="block mobile-link hover:text-studio-accent">01 / About</a>
+            <a href="#projects" class="block mobile-link hover:text-studio-accent">02 / Projects</a>
+            <a href="#achievements" class="block mobile-link hover:text-studio-accent">03 / Milestones</a>
+            <a href="#extracurriculars" class="block mobile-link hover:text-studio-accent">04 / Notes</a>
+            <a href="#contact" class="block mobile-link text-studio-accent">Contact &rarr;</a>
+        </nav>
+    </header>
+
+    <section class="mx-auto max-w-5xl px-6 py-24 md:py-36 grid md:grid-cols-12 gap-12 items-center">
+        <div class="md:col-span-7 space-y-6 text-center md:text-left">
+            <span class="text-xs font-bold uppercase tracking-widest text-studio-accent">Pallavi Priya's Portfolio</span>
+            <h1 class="text-4xl md:text-5xl font-extrabold tracking-tight text-studio-text leading-[1.15]">
+                Engineering computer science at IIT Guwahati.
+            </h1>
+            <p class="text-base text-slate-600 leading-relaxed font-light max-w-lg mx-auto md:mx-0">
+                I am a sophomore at IIT Guwahati, pursuing a B.Tech in Computer Science and Engineering, and I love turning ideas into code. Always curious, always building, and perpetually looking for the next cool project to dive into.
+            </p>
+            <div class="pt-4 flex justify-center md:justify-start gap-5 text-xs font-semibold uppercase tracking-wider">
+                <a href="#projects" class="rounded-none border-b-2 border-studio-text pb-1 hover:text-studio-accent hover:border-studio-accent transition-all">Explore Work &darr;</a>
+                <a href="#contact" class="rounded-none text-slate-400 hover:text-studio-text transition-all">Connect Page &rarr;</a>
+            </div>
+        </div>
+        <div class="md:col-span-5 flex justify-center md:justify-end">
+    <div class="w-64 sm:w-72 md:w-[280px] aspect-[3/4] bg-studio-card p-3 border border-studio-border">
+        <img id="profile-img" src="imforport.jpeg" alt="Pallavi Priya" class="w-full h-full object-cover grayscale transition-all duration-700 ease-out cursor-pointer">
+    </div>
+</div>
+    </section>
+
+    <section id="about" class="bg-studio-card border-y border-studio-border">
+        <div class="mx-auto max-w-5xl px-6 py-24 grid md:grid-cols-12 gap-12">
+            <div class="md:col-span-4">
+                <h2 class="text-xs font-bold uppercase tracking-widest text-studio-accent sticky top-32">01 / Profile Overview</h2>
+            </div>
+            <div class="md:col-span-8 space-y-8">
+                <p class="text-2xl text-studio-text leading-relaxed font-light">
+                    Hey, I'm Pallavi. I aspire to be a software engineer and am currently in the 2nd year of my B.Tech CSE degree at IIT Guwahati.
+                </p>
+                <div class="space-y-5 text-slate-600 leading-relaxed font-light text-sm">
+                    <p>
+                        I am dedicated towards both consistency and deadlines. I believe boundaries push you to focus, and effort done right always shows. Whether working solo or as part of a team, the goal stays the same: to show up, contribute meaningfully, and see it through.
+                    </p>
+                    <p>
+                        Alongside my academic and professional interests, my habit of journaling has helped me develop self-awareness, emotional resilience, and clarity in thinking, enabling me to approach challenges with a balanced perspective. I also enjoy reading novels, which further strengthens my imagination and communication skills.
+                    </p>
+                </div>
+
+                <div class="pt-8 grid sm:grid-cols-2 gap-6 border-t border-studio-border text-xs uppercase tracking-wider font-semibold text-slate-500">
+                    <div class="space-y-1">
+                        <span class="block text-[10px] font-bold tracking-widest text-slate-400">Secondary Schooling</span>
+                        <p class="text-studio-text">Kennedy High School</p>
+                        <p class="font-light text-slate-400">Vijayawada</p>
+                    </div>
+                    <div class="space-y-1">
+                        <span class="block text-[10px] font-bold tracking-widest text-slate-400">Higher Secondary</span>
+                        <p class="text-studio-text">Narayana Junior College</p>
+                        <p class="font-light text-slate-400">Hyderabad</p>
+                    </div>
+                </div>
+
+               <div class="pt-8 border-t border-studio-border space-y-4">
+    <h4 class="text-xs font-bold uppercase tracking-widest text-studio-text">Technical Stack</h4>
+    <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+        <div class="flex items-center space-x-3 p-3 bg-white border border-studio-border shadow-sm">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" class="h-6 w-6" alt="C">
+            <span class="text-xs font-semibold text-slate-700">C</span>
+        </div>
+        <div class="flex items-center space-x-3 p-3 bg-white border border-studio-border shadow-sm">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" class="h-6 w-6" alt="C++">
+            <span class="text-xs font-semibold text-slate-700">C++</span>
+        </div>
+        <div class="flex items-center space-x-3 p-3 bg-white border border-studio-border shadow-sm">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" class="h-6 w-6" alt="CSS">
+            <span class="text-xs font-semibold text-slate-700">CSS3</span>
+        </div>
+        <div class="flex items-center space-x-3 p-3 bg-white border border-studio-border shadow-sm">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" class="h-6 w-6" alt="JavaScript">
+            <span class="text-xs font-semibold text-slate-700">JavaScript</span>
+        </div>
+        <div class="flex items-center space-x-3 p-3 bg-white border border-studio-border shadow-sm">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" class="h-6 w-6" alt="React">
+            <span class="text-xs font-semibold text-slate-700">React.js</span>
+        </div>
+        <div class="flex items-center space-x-3 p-3 bg-white border border-studio-border shadow-sm">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" class="h-6 w-6" alt="Node.js">
+            <span class="text-xs font-semibold text-slate-700">Node.js</span>
+        </div>
+    </div>
+</div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="mx-auto max-w-5xl px-6 py-24 space-y-16">
+        <div class="border-b border-studio-border pb-4">
+            <h2 class="text-xs font-bold uppercase tracking-widest text-studio-accent">02 / Technical Projects</h2>
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-16">
+            <div class="group space-y-4">
+                <div class="overflow-hidden bg-studio-card aspect-[16/10] border border-studio-border p-2">
+                    <img src="velora.jpeg" alt="Vellora Route Optimization System" class="w-full h-full object-cover filter contrast-[1.02]">
+                </div>
+                <div class="space-y-2">
+                    <div class="flex items-center justify-between">
+                        <h3 class="text-base font-bold text-studio-text uppercase tracking-wider">Vellora Platform</h3>
+                        <div class="flex space-x-4 text-sm text-slate-400">
+                            <a href="https://github.com/hostel-2669/VELLORA" target="_blank" rel="noopener noreferrer" class="hover:text-studio-accent transition-colors"><i class="fa-brands fa-github"></i></a>
+                            <a href="https://vellora-five.vercel.app/" target="_blank" rel="noopener noreferrer" class="hover:text-studio-accent transition-colors"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                    <p class="text-slate-500 text-xs leading-relaxed font-light">
+                       A corporate mobility platform that processes personnel datasets to automatically generate optimized, time-window-compliant vehicle routes on an interactive map.
+                    </p>
+                </div>
+            </div>
+
+            <div class="group space-y-4">
+                <div class="overflow-hidden bg-studio-card aspect-[16/10] border border-studio-border p-2">
+                    <img src="edgedetected.jpeg" alt="Sobel Edge Detection FPGA Acceleration Layout" class="w-full h-full object-cover filter contrast-[1.02]">
+                </div>
+                <div class="space-y-2">
+                    <div class="flex items-center justify-between">
+                        <h3 class="text-base font-bold text-studio-text uppercase tracking-wider">FPGA Accelerator</h3>
+                        <div class="flex space-x-4 text-sm text-slate-400">
+                            <a href="https://github.com/pm-boss/image-filter-accelerator-fpga" target="_blank" rel="noopener noreferrer" class="hover:text-studio-accent transition-colors"><i class="fa-brands fa-github"></i></a>
+                        </div>
+                    </div>
+                    <p class="text-slate-500 text-xs leading-relaxed font-light">
+                        A hardware-level image processing accelerator implemented on a Nexys A7 FPGA that processes image data via UART to perform real-time Sobel edge detection.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="achievements" class="bg-studio-card border-y border-studio-border">
+        <div class="mx-auto max-w-5xl px-6 py-24 grid md:grid-cols-12 gap-12">
+            <div class="md:col-span-4">
+                <h2 class="text-xs font-bold uppercase tracking-widest text-studio-accent sticky top-32">03 / Competitive Distinctions</h2>
+            </div>
+            <div class="md:col-span-8 divide-y divide-studio-border/80">
+                
+                <div class="pb-6">
+                    <div class="flex flex-col sm:flex-row sm:items-baseline justify-between gap-1">
+                        <h4 class="text-base font-bold text-studio-text">JPMorgan Chase &ndash; Women in Quant Mentorship</h4>
+                        <span class="text-xs font-semibold text-studio-accent uppercase tracking-wider whitespace-nowrap">Feb 2026</span>
+                    </div>
+                    <p class="mt-2 text-slate-500 text-xs leading-relaxed font-light">
+                        Selected as one of 40 female students nationwide for a competitive quantitative finance mentorship program.
+                    </p>
+                </div>
+
+                <div class="py-6">
+                    <div class="flex flex-col sm:flex-row sm:items-baseline justify-between gap-1">
+                        <h4 class="text-base font-bold text-studio-text">Reliance Foundation Scholarship</h4>
+                        <span class="text-xs font-semibold text-studio-accent uppercase tracking-wider whitespace-nowrap">Nov 2024</span>
+                    </div>
+                    <p class="mt-2 text-slate-500 text-xs leading-relaxed font-light">
+                        Selected from 100,000+ applicants nationwide for academic merit.
+                    </p>
+                </div>
+
+                <div class="py-6">
+                    <div class="flex flex-col sm:flex-row sm:items-baseline justify-between gap-1">
+                        <h4 class="text-base font-bold text-studio-text">Joint Entrance Examination (JEE) Advanced</h4>
+                        <span class="text-xs font-semibold text-studio-accent uppercase tracking-wider whitespace-nowrap">June 2024</span>
+                    </div>
+                    <p class="mt-2 text-slate-500 text-xs leading-relaxed font-light">
+                        Qualified among the top 27% of candidates appearing for the exam.
+                    </p>
+                </div>
+
+                <div class="pt-6 last:pb-0">
+                    <div class="flex flex-col sm:flex-row sm:items-baseline justify-between gap-1">
+                        <h4 class="text-base font-bold text-studio-text">Joint Entrance Examination (JEE) Main</h4>
+                        <span class="text-xs font-semibold text-studio-accent uppercase tracking-wider whitespace-nowrap">April 2024</span>
+                    </div>
+                    <p class="mt-2 text-slate-500 text-xs leading-relaxed font-light">
+                        Qualified among the top 18% of candidates appearing for the exam.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="extracurriculars" class="mx-auto max-w-5xl px-6 py-24 space-y-12">
+        <div class="border-b border-studio-border pb-4">
+            <h2 class="text-xs font-bold uppercase tracking-widest text-studio-accent">04 / Collateral Interests</h2>
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-16">
+            <div class="space-y-4">
+                <div class="overflow-hidden bg-studio-card aspect-[16/10] border border-studio-border p-2">
+                    <img src="https://www.eastonpress.com/dw/image/v2/BDZH_PRD/on/demandware.static/-/Sites-full-catalog/default/dw387dae45/images/hi-res/3998016-crime-and-punishment-dostoevsky-gilded-pages.jpg?sw=265&sh=265&q=70" alt="Crime and Punishment" class="w-full h-full object-cover">
+                </div>
+                <div>
+                    <h3 class="text-sm font-bold uppercase tracking-wider text-studio-text">Novels</h3>
+                </div>
+            </div>
+
+            <div class="space-y-4">
+                <div class="overflow-hidden bg-studio-card aspect-[16/10] border border-studio-border p-2">
+                    <img src="https://images.squarespace-cdn.com/content/v1/603fd2e6b89a792feb000f9c/ef2b19e0-7383-46d3-9129-5d830d6123f0/IMG_3508.jpeg" alt="Person journaling on a laptop" class="w-full h-full object-cover">
+                </div>
+                <div>
+                    <h3 class="text-sm font-bold uppercase tracking-wider text-studio-text">Journal Writing</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact" class="bg-[#18191a] text-white border-t border-slate-800">
+        <div class="mx-auto max-w-5xl px-6 py-24 space-y-16">
+            <div class="grid md:grid-cols-12 gap-8 items-start">
+                <div class="md:col-span-4 space-y-2">
+                    <span class="text-[10px] font-bold uppercase tracking-widest text-studio-accent">Communications</span>
+                    <h2 class="text-2xl font-normal tracking-tight text-white uppercase font-light">Get In Touch</h2>
+                </div>
+                <div class="md:col-span-8">
+                    <form action="https://api.web3forms.com/submit" method="POST" class="space-y-5">
+                        <input type="hidden" name="access_key" value="b0cc78e9-6adf-4388-818a-d914dd63dde0">
+                        <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+
+                        <div class="grid sm:grid-cols-2 gap-8">
+    <div class="space-y-1">
+        <label class="block text-[10px] uppercase tracking-widest font-bold text-slate-400">Your Name</label>
+        <input type="text" name="name" required class="w-full bg-transparent border-b border-slate-700 py-2 text-xs uppercase tracking-wider text-white focus:outline-none focus:border-white transition-colors">
+    </div>
+    <div class="space-y-1">
+        <label class="block text-[10px] uppercase tracking-widest font-bold text-slate-400">Email Address</label>
+        <input type="email" name="email" required class="w-full bg-transparent border-b border-slate-700 py-2 text-xs uppercase tracking-wider text-white focus:outline-none focus:border-white transition-colors">
+    </div>
+</div>
+<div class="space-y-1 pt-2">
+    <label class="block text-[10px] uppercase tracking-widest font-bold text-slate-400">Message</label>
+    <textarea name="message" rows="4" required class="w-full bg-transparent border-b border-slate-700 py-2 text-xs uppercase tracking-wider text-white focus:outline-none focus:border-white transition-colors"></textarea>
+</div>
+                        <div class="pt-4 flex justify-end">
+                            <button type="submit" class="bg-white hover:bg-slate-200 text-slate-900 font-bold text-[11px] px-8 py-3.5 tracking-widest uppercase transition-colors">
+                                Dispatch Message &rarr;
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <div class="pt-8 border-t border-slate-800/80 flex flex-col sm:flex-row items-center justify-between gap-4 text-[11px] font-medium uppercase tracking-wider text-slate-500">
+                <p>&copy; 2026 Pallavi Priya. Studio Edition.</p>
+                <div class="flex space-x-6 text-base text-slate-400">
+                    <a href="https://github.com/ppAlexa" target="_blank" rel="noopener noreferrer" class="hover:text-white transition-colors"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/pallavipriyaiitg/" target="_blank" rel="noopener noreferrer" class="hover:text-white transition-colors"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="mailto:pallavipriyastm@gmail.com" class="hover:text-white transition-colors"><i class="fa-regular fa-envelope"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
